@@ -1,0 +1,12 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel --port 1234 index.pug",
+    "generate": "parcel build --public-url ./ index.pug"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "2.0.0-beta.2",
+    "@parcel/transformer-sass": "2.0.0-beta.2",
+    "parcel": "^2.0.0-beta.2"
+  }
+}

@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after
+  box-sizing: border-box // Include borders & padding with size
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+blockquote,
+dl,
+dd
+  margin: 0
+
+ul[role='list'],
+ol[role='list']
+  list-style: none
+
+// html:focus-within
+//   scroll-behavior: smooth
+
+html, body
+  scroll-padding-top: 100px
+  scroll-behavior: smooth
+  line-sizing: normal  // Consistent line-spacing, even when inline elements have different line-heights.
+
+body
+  min-height: 100vh
+  text-rendering: optimizeSpeed
+  // line-height: 1.6
+
+h1,
+h2,
+h3,
+h4,
+h5
+  line-height: 1.1
+
+input,
+button,
+textarea,
+select
+  font: inherit
+
+// @media (prefers-reduced-motion: reduce)
+//    html:focus-within
+//       scroll-behavior: auto
+//    *,
+//    *::before,
+//    *::after
+//       animation-duration: 0.01ms !important
+//       animation-iteration-count: 1 !important
+//       transition-duration: 0.01ms !important
+//       scroll-behavior: auto !important
+
+// header
+//    padding: 0.5rem
+
+// section
+//   padding: 2rem
+
+a
+  text-decoration: none
+
+// h1, h2, h3, p
+//   max-width: 80ch
+//   margin: 0 auto
+// }}}
+
+// [hidden]
+//   display: none
+
+img, svg, video, canvas, audio, iframe, embed, object
+  display: block
+  vertical-align: middle
+  max-width: 100%
+
+img, svg, video, canvas
+  height: auto
+
+// audio:not([controls])
+//   display:none
+
+img
+  border-style: none
+
+svg
+  overflow: hidden
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section
+  display: block
+
+// [type='checkbox'],
+// [type='radio']
+//   padding: 0

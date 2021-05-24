@@ -1,0 +1,56 @@
+$green_light: #B4CE48
+$green_medium: #809F3E
+$green_dark: #617935
+$green_darker: darken($green_dark, 10%)
+
+$blue:#26293A
+
+$bg_dark: #222
+$fg_light_text: #ddd
+$fg_light_title: #fff
+
+$bg_light: #eee
+$fg_dark_text: #444
+$fg_dark_title: #222
+
+$shadow: 0 0 10px 0 rgba(black, .25)
+
+h1, h2, h3, h4, h5
+  color: $fg_dark_title
+
+p,
+a
+  color: $fg_dark_text
+
+.link
+  color: $fg_dark_title
+
+.nuxt-link-exact-active,
+a:hover
+  color: $green_light
+
+#contact
+  // background: $green_darker
+  p,
+  a
+    color: $fg_light_text
+  h5
+    color: $fg_light_title
+
+#contact
+  // background: linear-gradient(to right, $green_darker, 85%, $green_light)
+  background: $blue
+  h3
+    color: $fg_light_title
+  p
+    color: $fg_light_text
+  &:before
+    background: $green_dark
+    // background: $green_medium
+    // background: $green_light
+
+.pre_leaf
+  background: $green_medium
+
+#logo
+  background: $blue

@@ -1,0 +1,85 @@
+doctype html
+html
+  //- head{{{
+  //--------------------------------------
+  //               Header
+  //--------------------------------------
+  head
+    title Polytel
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="shortcut icon" href="../assets/images/logo_icon_only.svg")
+
+    link(rel="stylesheet", href="styles/index.sass")
+    script(src="scripts/index.js" defer)
+
+  // }}}
+  //- body{{{
+  body
+    //- navigation{{{
+    //--------------------------------------
+    //               Navigation
+    //--------------------------------------
+    nav
+      input#toggler(type="checkbox")
+      label(for="toggler" )
+        #menu_button
+          #bar
+
+      a(href="#intro")
+        //- #logo: img(src="../assets/images/logo_icon_text.svg")
+        #logo
+          img(src="../assets/images/logo_horizontal.png")
+      .menu
+        a(href="#intro") home
+        a(href="#about") about
+        a(href="#product") product
+        a(href="#contact") contact
+    // }}}
+    //- intro{{{
+    //--------------------------------------
+    //               Intro
+    //--------------------------------------
+    section#intro.grid.two
+      article
+        h1 Ipsum consectetur repellat officia dolor
+        p Adipisicing saepe nesciunt quas non exercitationem saepe Quibusdam sequi sint ipsa quam quaerat Sapiente neque neque voluptate sit lorem porro quisquam dicta? Magni necessitatibus aspernatur?
+      aside
+        #intro__image_container: img(src="../assets/images/intro.png")
+    // }}}
+
+    //- about{{{
+    //--------------------------------------
+    //               about
+    //--------------------------------------
+    section#about.grid.two
+      aside
+        .about__image_container: img(src="../assets/images/hero_1.jpg")
+        .about__image_container: img(src="../assets/images/hero_2.jpg")
+        .about__image_container: img(src="../assets/images/hero_3.jpg")
+        .about__image_container: img(src="../assets/images/hero_4.jpg")
+      article
+        h1 What we do
+        p Sit asperiores necessitatibus iste dicta accusamus Laudantium perspiciatis adipisci quas sit rerum? Repellendus asperiores id similique quibusdam adipisci Eveniet doloribus quibusdam officia aliquid velit, cupiditate.
+        h5 Adipisicing dolore sed voluptate quae fuga Corrupti aliquid exercitationem voluptatibus eius quo aspernatur, iste. Deleniti?
+    // }}}
+
+    //- footer{{{
+    //--------------------------------------
+    //               Footer
+    //--------------------------------------
+    section#contact.grid.three
+      #footer__logo
+        //- img(src="../assets/images/logo_black_white.svg")
+        img(src="../assets/images/logo_vertical.png")
+      #footer__contact
+        h3 Contact
+        p info@polytel.xyz
+        p +8801859637967
+      #footer__links
+        h3 Links
+        a(href="#intro") Introduction
+        a(href="#about") About
+        a(href="#product") Product
+      p#copyright © 2021 · Polytel · All Rights Reserved
+// }}}

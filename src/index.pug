@@ -5,13 +5,16 @@ html
   //               Header
   //--------------------------------------
   head
-    title Polytel
+    title PolyTel
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    link(rel="shortcut icon" href="../assets/images/logo_icon_only.svg")
+    //- link(rel="shortcut icon" href="../assets/images/logo_icon_only.svg")
+    //- link(rel="shortcut icon" href="../assets/images/out.png")
 
     link(rel="stylesheet", href="styles/index.sass")
     script(src="scripts/index.js" defer)
+
+    script(src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous")
 
   // }}}
   //- body{{{
@@ -45,25 +48,59 @@ html
         h1 Ipsum consectetur repellat officia dolor
         p Adipisicing saepe nesciunt quas non exercitationem saepe Quibusdam sequi sint ipsa quam quaerat Sapiente neque neque voluptate sit lorem porro quisquam dicta? Magni necessitatibus aspernatur?
       aside
-        #intro__image_container: img(src="../assets/images/intro.png")
+        .image_container: img(src="../assets/images/intro.png")
+        //- img(src="../assets/images/intro.png")
     // }}}
-
     //- about{{{
     //--------------------------------------
     //               about
     //--------------------------------------
     section#about.grid.two
       aside
-        .about__image_container: img(src="../assets/images/hero_1.jpg")
-        .about__image_container: img(src="../assets/images/hero_2.jpg")
-        .about__image_container: img(src="../assets/images/hero_3.jpg")
-        .about__image_container: img(src="../assets/images/hero_4.jpg")
-      article
+        .image_container: img(src="../assets/images/hero_1.jpg")
+        .image_container: img(src="../assets/images/hero_1.jpg")
+        div
+        .image_container: img(src="../assets/images/hero_1.jpg")
+      article.center
         h1 What we do
         p Sit asperiores necessitatibus iste dicta accusamus Laudantium perspiciatis adipisci quas sit rerum? Repellendus asperiores id similique quibusdam adipisci Eveniet doloribus quibusdam officia aliquid velit, cupiditate.
-        h5 Adipisicing dolore sed voluptate quae fuga Corrupti aliquid exercitationem voluptatibus eius quo aspernatur, iste. Deleniti?
+        h4 Adipisicing dolore sed voluptate quae fuga Corrupti aliquid exercitationem voluptatibus eius quo aspernatur, iste. Deleniti?
     // }}}
+    //- product{{{
+    //--------------------------------------
+    //               product
+    //--------------------------------------
+    section#product.grid.two
+      article.center
+        h1 Our Product
+        p Sit pariatur ad voluptatum magnam
+        p Sit pariatur ad voluptatum magnam
+        p Sit pariatur ad voluptatum magnam
+      aside
 
+        .product_container.grid.two
+          .colored_box
+          .image_container: img(src="../assets/images/hero_2.jpg")
+
+        .product_container
+          .image_container: img(src="../assets/images/hero_2.jpg")
+          .image_container: img(src="../assets/images/hero_2.jpg")
+          .image_container: img(src="../assets/images/hero_2.jpg")
+    // }}}
+    //- quote{{{
+    //--------------------------------------
+    //               quote
+    //--------------------------------------
+    section#quote
+      #quote__container
+        i(class="fas fa-quote-left")
+        //- i(class="fas fa-quote-right")
+        p Adipisicing laboriosam dignissimos temporibus itaque veritatis. Nesciunt saepe deleniti suscipit soluta corrupti! Blanditiis dignissimos illum veniam architecto similique Soluta sint praesentium impedit ipsa eligendi? Laborum
+        h5 -&nbsp
+        h5 Wahid Mugdha,
+        em &nbsp
+        em Entrepreneur
+    // }}}
     //- footer{{{
     //--------------------------------------
     //               Footer
@@ -81,5 +118,12 @@ html
         a(href="#intro") Introduction
         a(href="#about") About
         a(href="#product") Product
-      p#copyright © 2021 · Polytel · All Rights Reserved
+
+        h3 Socials
+        a.socials(href="#" target="_blank" rel="noopener noreferrer"): i(class="fab fa-facebook-f")
+        a.socials(href="#" target="_blank" rel="noopener noreferrer"): i(class="fab fa-twitter")
+        a.socials(href="#" target="_blank" rel="noopener noreferrer"): i(class="fab fa-instagram")
+        a.socials(href="#" target="_blank" rel="noopener noreferrer"): i(class="fab fa-linkedin-in")
+      p#copyright © 2021 · PolyTel · All Rights Reserved
+      p Made with joYY by YY Studios
 // }}}

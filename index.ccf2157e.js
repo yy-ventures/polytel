@@ -1,2 +1,0 @@
-document.querySelector("#intro img").onload=()=>{(e=>{for(const t in e)(o=t,document.querySelectorAll(o)).forEach((o=>{var r,c,n;r=o,c=o=>o.classList.add(e[t]),new IntersectionObserver(((e,o)=>{e.forEach((e=>{e.isIntersecting?(c(e.target),n||o.disconnect()):n&&n(e.target)}))})).observe(r)}));var o})({".moved_right":"move_back",".moved_left":"move_back",".faded_out":"fade_in"})};
-//# sourceMappingURL=index.ccf2157e.js.map

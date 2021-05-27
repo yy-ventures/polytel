@@ -1,4 +1,6 @@
-# Polytel
+# PolyTel: Business Site for PolyTel
+
+https://yy-ventures.github.io/polytel/
 
 # Dev Dependencies
 
@@ -6,6 +8,6 @@
 - parcel/transformer-pug
 - parcel/transformer-sass
 
-# Dependencies
+# Project Dependencies
 
 - None. 😎

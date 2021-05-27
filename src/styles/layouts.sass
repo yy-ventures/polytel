@@ -68,25 +68,32 @@ section
   padding-top: 200px
 
   .image_container
-    margin: 0 0 2.5em 0
+    // margin: 0 0 2.5em 0
+
+    width: 75%
+    margin: 0 auto
     position: relative
     &::before, &::after
       content: ""
       position: absolute
       z-index: -1
       border-radius: 5em 0 5em 0
+      width: 50%
+      height: 75%
 
     &::before
-      width: 40%
-      height: 65%
-      top: 50%
-      transform: translate(25%, 0)
+      bottom: 0
+      transform: translate(-25%, 25%)
+      width: 50%
+      height: 75%
+      border-radius: 5em 0 5em 0
     &::after
-      width: 35%
-      height: 50%
+      width: 40%
+      height: 60%
+      border-radius: 4em 0 4em 0
       right: 0
       top: 0
-      transform: translate(-25%, -25%)
+      transform: translate(25%, -50%)
 
 // }}}
 // about{{{
@@ -107,7 +114,6 @@ section
       content: ""
       position: absolute
       z-index: -1
-      border-radius: 5em 0 5em 0
 
     &::before
       top: 25%
@@ -115,11 +121,14 @@ section
       transform: translateX(-25%)
       width: 50%
       height: 50%
+      border-radius: 7em 0 7em 0
 
     &::after
+      transform: translate(15%, 15%)
       right: 0
       width: 25%
-      height: 25%
+      height: 20%
+      border-radius: 3.5em 0 3.5em 0
 
     .image_container
       overflow: hidden
@@ -219,7 +228,7 @@ section
 
       .colored_box
         height: 300px
-        border-radius: 5em 0 5em 0
+        border-radius: 7em 0 7em 0
         margin-left: 5em
         
         // background: $blue

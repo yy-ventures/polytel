@@ -1,2 +1,48 @@
 nav a
   transition: color 500ms
+
+.faded_out
+  transition: opacity 1s ease-in-out 500ms
+  opacity: 0
+
+.fade_in
+  opacity: 1
+
+.moved_right, .moved_left
+  transition: transform 1s ease-in-out,  opacity 1s ease-in-out
+  opacity: 0
+
+.moved_right
+  transform: translateX(100%)
+.moved_left
+  transform: translateX(-100%)
+
+.move_back
+  transform: translateX(0)
+  opacity: 1
+
+// .move_from_right
+//   animation: move_from_right 500ms linear
+// @keyframes #{move_from_right}
+//   0%
+//     opacity: 0
+//     transform: translateX(100%)
+//   100%
+//     opacity: 1
+//     transform: translateX(0)
+
+// .fade_in
+//   animation: fade_in 2s ease-in-out
+// @keyframes #{fade_in}
+//   0%
+//     opacity: 0
+//   100%
+//     opacity: 1
+
+#intro
+  aside
+    transition-delay: 1500ms
+  h1
+    transition-delay: 2500ms
+  p
+    transition-delay: 3500ms

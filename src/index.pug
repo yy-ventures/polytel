@@ -20,7 +20,7 @@ html
 
   // }}}
   //- body{{{
-  body
+  body.faded_out
     //- navigation{{{
     //--------------------------------------
     //               Navigation
@@ -42,22 +42,22 @@ html
     //--------------------------------------
     section#intro.grid.two
       article
-        h1 Ipsum consectetur repellat officia dolor
-        p Adipisicing saepe nesciunt quas non exercitationem saepe Quibusdam sequi sint ipsa quam quaerat Sapiente neque neque voluptate sit lorem porro quisquam dicta? Magni necessitatibus aspernatur?
-      aside
-        .image_container: img(src="../assets/images/hero_4.jpg")
+        h1.faded_out Ipsum consectetur repellat officia dolor
+        p.faded_out Adipisicing saepe nesciunt quas non exercitationem saepe Quibusdam sequi sint ipsa quam quaerat Sapiente neque neque voluptate sit lorem porro quisquam dicta? Magni necessitatibus aspernatur?
+      aside.faded_out
+        .image_container.leaf: img(src="../assets/images/hero_4.jpg")
     // }}}
     //- about{{{
     //--------------------------------------
     //               about
     //--------------------------------------
     section#about.grid.two
-      aside
+      aside.leaf.moved_left
         .image_container: img(src="../assets/images/hero_4.jpg")
         .image_container: img(src="../assets/images/hero_4.jpg")
         div
         .image_container: img(src="../assets/images/hero_4.jpg")
-      article.center
+      article.center.moved_right
         h1 What we do
         p Sit asperiores necessitatibus iste dicta accusamus Laudantium perspiciatis adipisci quas sit rerum? Repellendus asperiores id similique quibusdam adipisci Eveniet doloribus quibusdam officia aliquid velit, cupiditate.
         h4 Adipisicing dolore sed voluptate quae fuga Corrupti aliquid exercitationem voluptatibus eius quo aspernatur, iste. Deleniti?
@@ -67,12 +67,12 @@ html
     //               product
     //--------------------------------------
     section#product.grid.two
-      article.center
+      article.center.moved_left
         h1 Our Product
         p Sit pariatur ad voluptatum magnam
         p Sit pariatur ad voluptatum magnam
         p Sit pariatur ad voluptatum magnam
-      aside
+      aside.moved_right
 
         .product_container.grid.two
           .colored_box
@@ -87,7 +87,7 @@ html
     //--------------------------------------
     //               quote
     //--------------------------------------
-    section#quote
+    section#quote.faded_out
       #quote__container
         i(class="fas fa-quote-left")
         i(class="fas fa-quote-right")
@@ -101,13 +101,13 @@ html
     //--------------------------------------
     //               Footer
     //--------------------------------------
-    section#contact.grid.three
-      #footer__logo: img(src="../assets/images/logo_vertical.png")
-      #footer__contact
+    section#contact.grid.three.leaf
+      #footer__logo: img(src="../assets/images/logo_vertical.png").moved_left
+      #footer__contact.faded_out
         h3 Contact
         p info@polytel.xyz
         p +8801859637967
-      #footer__links
+      #footer__links.moved_right
         h3 Links
         a(href="#intro") Introduction
         a(href="#about") About
